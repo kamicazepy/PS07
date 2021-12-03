@@ -11,9 +11,7 @@ sets recommended by Dr. Sara Stoudt and the open source webpage Kable, I
 was able to bring back some memories with pretty cool facts about this
 tv show using R.
 
-<figure>
-<img src="scooby.jpeg" style="width:50.0%" alt="alt text" /><figcaption aria-hidden="true">alt text</figcaption>
-</figure>
+<img src="scooby.jpeg" style="width:50.0%" />
 
 ## Mistery solved
 
