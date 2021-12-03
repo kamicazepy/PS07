@@ -17,7 +17,7 @@ library(scales)
 ## Scooby Do, where are you?!
 Even though I am already an adult, I do love cartoons! Scooby-Do was one of favorites since I was a child. Every Saturday morning I would change the channel from the news and I would sit on the couch to watch one more episode while eating breakfast. Thanks to one of the Tidy Tuesday data sets recommended by Dr. Sara Stoudt and the open source webpage Kable, I was able to bring back some memories with pretty cool facts about this tv show using R.
 
-![alt text](scooby.jpeg){width=50%}
+![](scooby.jpeg){width=50%}
 
 
 ## Mistery solved
@@ -75,7 +75,7 @@ From the very first appearance of the mysterious monster at the beggining of eac
 
 ```{r pressure, echo=FALSE}
 
-ggplot(monster_types, aes(x = reorder(monster_type, numberoftimes), y = numberoftimes)) + geom_col() + labs(x = "Type of Monster", y = "Number of times shown", title = "Top 5 types of monsters shown in Scooby Doo episodes", subtitle = "Null data not shown" )+ theme(element_blank())
+ggplot(monster_types, aes(x = reorder(monster_type, numberoftimes), y = numberoftimes, fill = monster_type)) + geom_col() + labs(x = "Type of Monster", y = "Number of times shown", title = "Top 5 types of monsters shown in Scooby Doo episodes", subtitle = "Null data not shown" )+ theme(element_blank()) + guides(fill = "none")
 ```
                                                                                                 
 
